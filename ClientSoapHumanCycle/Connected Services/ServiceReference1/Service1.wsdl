@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53326/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53326/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53326/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceHumanCycle" />
+      <xsd:import schemaLocation="http://localhost:53326/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfServiceHumanCycle.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHumen_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHumen" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHumen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHumenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReturnLastHuman_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnLastHuman" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReturnLastHuman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnLastHumanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateHuman_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateHuman" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateHuman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateHumanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateHuman_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHuman" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateHuman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHumanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertGenderList_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertGenderList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertGenderList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertGenderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertHumanList_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHumanList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertHumanList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHumanListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertStatutList_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStatutList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertStatutList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStatutListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertSliceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSliceList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertSliceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSliceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertTownList_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTownList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertTownList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTownListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteAllTables_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllTables" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteAllTables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllTablesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHumen">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetHumen" message="tns:IService1_GetHumen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetHumenResponse" message="tns:IService1_GetHumen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnLastHuman">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReturnLastHuman" message="tns:IService1_ReturnLastHuman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReturnLastHumanResponse" message="tns:IService1_ReturnLastHuman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateHuman">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateHuman" message="tns:IService1_CreateHuman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateHumanResponse" message="tns:IService1_CreateHuman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHuman">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateHuman" message="tns:IService1_UpdateHuman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateHumanResponse" message="tns:IService1_UpdateHuman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertGenderList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertGenderList" message="tns:IService1_InsertGenderList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertGenderListResponse" message="tns:IService1_InsertGenderList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertHumanList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertHumanList" message="tns:IService1_InsertHumanList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertHumanListResponse" message="tns:IService1_InsertHumanList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStatutList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertStatutList" message="tns:IService1_InsertStatutList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertStatutListResponse" message="tns:IService1_InsertStatutList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSliceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertSliceList" message="tns:IService1_InsertSliceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertSliceListResponse" message="tns:IService1_InsertSliceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTownList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertTownList" message="tns:IService1_InsertTownList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertTownListResponse" message="tns:IService1_InsertTownList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllTables">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteAllTables" message="tns:IService1_DeleteAllTables_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteAllTablesResponse" message="tns:IService1_DeleteAllTables_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHumen">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetHumen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnLastHuman">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReturnLastHuman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateHuman">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateHuman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHuman">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateHuman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertGenderList">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertGenderList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertHumanList">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertHumanList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStatutList">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertStatutList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSliceList">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertSliceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTownList">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertTownList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllTables">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteAllTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:53326/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

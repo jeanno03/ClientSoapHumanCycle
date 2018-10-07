@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceHumanCycle.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceHumanCycle.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfHuman">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Human" nillable="true" type="tns:Human" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHuman" nillable="true" type="tns:ArrayOfHuman" />
+  <xs:complexType name="Human">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Children" nillable="true" type="tns:ArrayOfHuman" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="tns:Gender" />
+      <xs:element minOccurs="0" name="HumanId" type="xs:int" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parent" nillable="true" type="tns:ArrayOfHuman" />
+      <xs:element minOccurs="0" name="Slice" nillable="true" type="tns:Slice" />
+      <xs:element minOccurs="0" name="Statut" nillable="true" type="tns:Statut" />
+      <xs:element minOccurs="0" name="Town" nillable="true" type="tns:Town" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Human" nillable="true" type="tns:Human" />
+  <xs:complexType name="Gender">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GenderId" type="xs:int" />
+      <xs:element minOccurs="0" name="Humans" nillable="true" type="tns:ArrayOfHuman" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Gender" nillable="true" type="tns:Gender" />
+  <xs:complexType name="Slice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Humans" nillable="true" type="tns:ArrayOfHuman" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+      <xs:element minOccurs="0" name="SliceId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Slice" nillable="true" type="tns:Slice" />
+  <xs:complexType name="Statut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Humans" nillable="true" type="tns:ArrayOfHuman" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+      <xs:element minOccurs="0" name="StatutId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Statut" nillable="true" type="tns:Statut" />
+  <xs:complexType name="Town">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Humans" nillable="true" type="tns:ArrayOfHuman" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+      <xs:element minOccurs="0" name="TownId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Town" nillable="true" type="tns:Town" />
+  <xs:complexType name="ArrayOfGender">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Gender" nillable="true" type="tns:Gender" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGender" nillable="true" type="tns:ArrayOfGender" />
+  <xs:complexType name="ArrayOfStatut">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Statut" nillable="true" type="tns:Statut" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStatut" nillable="true" type="tns:ArrayOfStatut" />
+  <xs:complexType name="ArrayOfSlice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Slice" nillable="true" type="tns:Slice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSlice" nillable="true" type="tns:ArrayOfSlice" />
+  <xs:complexType name="ArrayOfTown">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Town" nillable="true" type="tns:Town" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTown" nillable="true" type="tns:ArrayOfTown" />
+</xs:schema>

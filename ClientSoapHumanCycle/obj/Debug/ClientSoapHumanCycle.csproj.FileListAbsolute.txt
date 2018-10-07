@@ -1,0 +1,7 @@
+C:\Users\jeanno\source\repos\ClientSoapHumanCycle\ClientSoapHumanCycle\bin\Debug\ClientSoapHumanCycle.exe.config
+C:\Users\jeanno\source\repos\ClientSoapHumanCycle\ClientSoapHumanCycle\bin\Debug\ClientSoapHumanCycle.exe
+C:\Users\jeanno\source\repos\ClientSoapHumanCycle\ClientSoapHumanCycle\bin\Debug\ClientSoapHumanCycle.pdb
+C:\Users\jeanno\source\repos\ClientSoapHumanCycle\ClientSoapHumanCycle\obj\Debug\ClientSoapHumanCycle.csprojAssemblyReference.cache
+C:\Users\jeanno\source\repos\ClientSoapHumanCycle\ClientSoapHumanCycle\obj\Debug\ClientSoapHumanCycle.csproj.CoreCompileInputs.cache
+C:\Users\jeanno\source\repos\ClientSoapHumanCycle\ClientSoapHumanCycle\obj\Debug\ClientSoapHumanCycle.exe
+C:\Users\jeanno\source\repos\ClientSoapHumanCycle\ClientSoapHumanCycle\obj\Debug\ClientSoapHumanCycle.pdb
